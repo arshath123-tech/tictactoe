@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>TIC❌TAC⭕TOE🎯</h1>
+    <div class="userInput">
+        <h2>Login: Game-Space</h2>
+        <div class="player1">
+            <label for="">Player1:</label>
+            <input  type="text" placeholder="Enter the name"><br>
+            <span></span>
+        </div>
+        <div class="player2">
+            <label for="">Player2:</label>
+            <input  type="text" placeholder="Enter the name"><br>
+            <span></span>
+        </div>
+        <button class="enter" onclick="submit()">Submit</button>
+    </div>
+      
+    <div class="winnerPop">
+        <h1>CONGRATULATIONS </h1><br>
+            <div> <span></span><h2> WON THE GAME
+        </h2>
+        </div>
+        </div>
+
+    <div class="rulesBox">
+        <div>
+        <h2>RULES AND REGULATIIONS</h2>
+        <button class="wrong" onclick="wrongBox()">X</button>
+        </div>
+        
+        <div>
+        <ul>
+            <li>The game is played on a 3x3 grid (3 rows and 3 columns).</li>   
+            <li>Two players take turns. One uses ❌ (X) and the other uses ⭕ (O).</li>  
+            <li>Players alternate placing their symbol in an empty square on the grid.</li>   
+            <li>The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins.</li>  
+            <li>If all 9 squares are filled and no player has 3 in a row, the game is a draw (tie).</li> 
+         </ul>
+         </div>
+         <div>
+        <table border="5" width="%">
+            <tr>
+                <th class="head1">Player 1</th>
+                <th class="head2">Player 2</th>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>O</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+    <div class="overLay"></div>
+
+    <div class="container">
+     <div class="head">
+        <h1>TIC❌TAC⭕TOE🎯</h1>
+        <button onclick="but()">Rules</button>
+        <h2><span class="winner" style="text-transform: capitalize;"></span>'s Turn</h2>
+     </div>
+     <div class="inner">
+      <div class="board">
+        <div cellIndex="0" class="one"></div>
+        <div cellIndex="1" class="two"></div>
+        <div cellIndex="2" class="three"></div>
+        <div cellIndex="3" class="four"></div>
+        <div cellIndex="4" class="five"></div>
+        <div cellIndex="5" class="six"></div>
+        <div cellIndex="6" class="seven"></div>
+        <div cellIndex="7" class="eight"></div>
+        <div cellIndex="8" class="nine"></div>
+    </div>
+    <div>
+    <button  class="rest" >Restart</button>
+    <button onclick="relogin()">Re-login</button>
+    </div>
+    </div>
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
